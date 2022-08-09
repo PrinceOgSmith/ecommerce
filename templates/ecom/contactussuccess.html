@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+  <title>Tao Business</title>
+  <style media="screen">
+    .jumbotron {
+      margin-bottom: 0px;
+    }
+
+    .jumbotron h1 {
+      text-align: center;
+    }
+  </style>
+
+</head>
+
+<body style="background-color: #B3E5FC;">
+
+  {% include "ecom/navbar.html" %}
+  <br><br>
+  <div class="jumbotron">
+    <h1 class="display-4">Votre message a été envoyé avec succès!</h1>
+    <p class="lead">Nous répondrons bientôt à votre commentaires</p>
+    <hr class="my-4">
+    <p>Verifier les autres fonctionalités du site web !</p>
+    <p class="lead">
+      <a class="btn btn-primary btn-lg" href="/" role="button">Accueil</a>
+    </p>
+  </div>
+
+  {% include "ecom/footer.html" %}
+</body>
+
+</html>

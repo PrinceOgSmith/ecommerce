@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href=".../images/logo.jpg">
+  <title>Tao Business Shop</title>
+  <style media="screen">
+    .footer{
+      position: fixed;
+    }
+  </style>
+</head>
+
+<body style="background-color:#f7f7f7;">
+  {%if request.user.is_authenticated%}
+    {% include "ecom/customer_navbar.html" %}
+  {%else%}
+    {% include "ecom/navbar.html" %}
+  {%endif%}
+  <br><br><br>
+<h3 style="text-align:center;">"Cette application est intitulée Tao Business Shop
+   - Site de commerce électronique. Il s'agit d'une
+application Web simple développée en Python et Django Framework. L'objectif principal de
+l'application est de fournir à certains magasins ou boutiques Tao Business une plate-forme en ligne
+permettant à nos clients potentiels de commander les produits souhaités. Ce système aide
+à la fois la direction du magasin et les clients à effectuer des transactions en ligne qui
+ne nécessitent pas la présence du client dans le magasin réel. L'application dispose d'une
+interface utilisateur agréable à l'aide de Bootstrap Framework qui offre aux utilisateurs 
+finaux une meilleure expérience lors de l'utilisation de l'application. Il se compose de 
+caractéristiques et de fonctionnalités conviviales" </h3>
+<br><br><br><br><br>
+
+
+  {% include "ecom/footer.html" %}
+</body>
+
+
+</html>
